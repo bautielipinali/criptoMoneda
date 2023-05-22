@@ -1,0 +1,99 @@
+* {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+  text-align: center;
+}
+
+.filtros {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.table-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+  font-family: Arial, sans-serif;
+}
+
+.table th,
+.table td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+.table th {
+  background-color: #f5f5f5;
+}
+
+.panel-container {
+  background-color: #f2f2f2;
+  padding: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.panel-control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.panel-control p {
+  margin-bottom: 5px;
+}
+
+.panel-control input,
+.panel-control select {
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+.panel-control select {
+  background-color: #fff;
+  color: #333;
+}
+
+.panel-control button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 3px;
+  background-color: #227ab4;
+  color: #fff;
+  cursor: pointer;
+}
+
+.panel-control button:hover {
+  background-color: #c82333;
+}
+
+.panel-control button:active {
+  background-color: #a71d2a;
+}
+
+td button{
+  padding: 8px 16px;
+  border: none;
+  border-radius: 3px;
+  background-color: #dc3545;
+  color: #fff;
+  cursor: pointer;
+}

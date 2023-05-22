@@ -1,0 +1,45 @@
+<h2>Lista de Criptomonedas</h2>
+
+<div class="filtros">
+  <label>Filtrar por: </label>
+  <select (change)="filterList($event)">
+   <option value="alfabetico">Orden Alfabético</option>
+   <option value="priceAsc">Precio: Menor a Mayor</option>
+  <option value="priceDesc">Precio: Mayor a Menor</option>
+  </select>
+</div>
+
+<div class="table-container">
+  <table class="table">
+    <thead>
+      <tr>
+    <th>Nombre</th>
+    <th>Siglas</th>
+    <th>Precio (USD)</th>
+    <th>Quitar</th>
+      </tr>
+    </thead>
+  <tbody>
+    <tr *ngFor="let cripto of criptos, let i = index">
+      <td>{{ cripto.nombre }}</td>
+      <td>{{ cripto.sigla }}</td>
+      <td>$ {{ cripto.precio }}</td>
+      <td><button (click)="eliminarCripto(i)">Eliminar</button></td>
+    </tr>
+  </tbody>
+    
+  </table>
+</div>
+
+
+<div class="panel-control">
+  <h2>Panel de Control</h2>
+  <p>Ingrese el nombre de la cripto: </p>
+    <input type="text" [(ngModel)]="nueva.nombre">
+  <p>Ingrese la sigla de la cripto: </p>
+    <input type="text" [(ngModel)]="nueva.sigla">
+  <p>Ingrese el precio de la cripto: </p>
+    <input type="number" [(ngModel)]="nueva.precio">
+      <br><br>
+  <button (click)="crearCripto()">Crear</button>
+</div>
